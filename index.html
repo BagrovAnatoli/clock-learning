@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Стрелки</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" >
+	<script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+	<script src="js/index.js"></script>
+</head>
+<body>
+	<div class="modes">
+		<div class="mode m1"><button id="but1">Стрелки</button></div>
+		<div class="mode m2"><button id="but2">Стрелки и числа</button></div>
+		<div class="mode m3"><button id="but3">Числа</button></div>
+	</div>
+	<div class="main-field">
+		<div class="clock">
+			<img id="circle" src="img/circle.jpg">
+		    <img id="h-arrow" src="img/hArrow.png">
+		    <img id="m-arrow" src="img/mArrow.png">
+		</div>
+		<div class="scrolls">
+			<div class="numbers">00:00</div>
+			<img id="sky" src="img/day-night.png">
+			<div id="h-scroll">
+				<p id="h-max" class="scroll-text">24</p>
+				<input id="hInput" type="range" min="0" max="24" step="1" value="0" orient="vertical" />
+				<p id="h-min" class="scroll-text">0</p>
+			</div>
+			<div id="m-scroll">
+				<p id="m-max" class="scroll-text">60</p>
+				<input id="mInput" type="range" min="0" max="60" step="1" value="0" orient="vertical" />
+				<p id="m-min" class="scroll-text">0</p>
+			</div>
+		</div>  
+	</div>
+</body>
+</html>
